@@ -39,7 +39,7 @@ module.exports = httpClient.extend({
     createPage: httpMethod({
       method: 'POST',
       path: '{UserId}/KYC/documents/{Id}/pages',
-      requiredParams: ['UserId', 'File'],
+      requiredParams: ['UserId', 'Id', 'File'],
     }),
 
     fetch: httpMethod({
